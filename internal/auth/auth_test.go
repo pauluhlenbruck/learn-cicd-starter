@@ -28,7 +28,7 @@ func TestGetAPIKey(t *testing.T) {
 	// Test case: Valid Authorization header
 	t.Run("ValidAuthHeader", func(t *testing.T) {
 		headers := http.Header{}
-		headers.Set("Authorization", "ApiKey validkey124")
+		headers.Set("Authorization", "ApiKey validkey123")
 		apiKey, err := GetAPIKey(headers)
 		if err != nil {
 			t.Errorf("unexpected error: %v", err)
